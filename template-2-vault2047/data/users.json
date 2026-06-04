@@ -1,0 +1,20 @@
+[
+  {
+    "id": "usr_superadmin",
+    "username": "vault_admin",
+    "email": "admin@vault2047.com",
+    "password": "vault2047admin",
+    "role": "super_admin",
+    "permissions": { "speakers": true, "partners": true, "exhibitors": true, "testimonials": true, "blogs": true, "agenda": true },
+    "active": true
+  },
+  {
+    "id": "usr_contrib1",
+    "username": "team_commercial",
+    "email": "commercial@vault2047.com",
+    "password": "commercial123",
+    "role": "contributor",
+    "permissions": { "speakers": false, "partners": true, "exhibitors": true, "testimonials": false, "blogs": false, "agenda": false },
+    "active": true
+  }
+]

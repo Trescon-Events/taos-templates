@@ -1,0 +1,178 @@
+[
+  {
+    "id": "1",
+    "time": "08:00",
+    "endTime": "09:00",
+    "type": "registration",
+    "title": "Registration & Welcome Coffee",
+    "desc": "Check in, collect your badge, and connect with fellow delegates over coffee and light refreshments.",
+    "speaker": "",
+    "company": "",
+    "location": "Foyer"
+  },
+  {
+    "id": "2",
+    "time": "09:00",
+    "endTime": "09:15",
+    "type": "ceremony",
+    "title": "Official Welcome & Opening Address",
+    "desc": "A warm welcome from the World CX Summit organising team, setting the tone for a day of insight, connection and inspiration.",
+    "speaker": "Summit Host",
+    "company": "World CX Summit",
+    "location": "Main Stage"
+  },
+  {
+    "id": "3",
+    "time": "09:15",
+    "endTime": "10:00",
+    "type": "keynote",
+    "title": "The CX Revolution — Where Are We Really Headed?",
+    "desc": "An incisive opening keynote examining the forces reshaping customer experience in 2026 — AI, hyper-personalisation, and the rising expectations of India's next billion consumers.",
+    "speaker": "TBA",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "4",
+    "time": "10:00",
+    "endTime": "10:45",
+    "type": "keynote",
+    "title": "AI-First CX — Moving from Tool to Organisational Strategy",
+    "desc": "How leading enterprises are embedding AI not as a point solution but as the operating system of their customer experience — and what it takes to get there.",
+    "speaker": "TBA",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "5",
+    "time": "10:45",
+    "endTime": "11:15",
+    "type": "break",
+    "title": "Networking & Refreshment Break",
+    "desc": "Visit sponsor booths and explore the exhibition area.",
+    "speaker": "",
+    "company": "",
+    "location": "Exhibition Hall"
+  },
+  {
+    "id": "6",
+    "time": "11:15",
+    "endTime": "12:00",
+    "type": "panel",
+    "title": "Hyper-Personalisation at Scale — From Vision to Measurable Impact",
+    "desc": "Senior CX leaders from e-commerce, banking and healthcare share how they are delivering truly individual experiences to millions of customers without sacrificing efficiency or trust.",
+    "speaker": "Panel of 4 Industry Leaders",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "7",
+    "time": "12:00",
+    "endTime": "12:30",
+    "type": "fireside",
+    "title": "Fireside Chat: Building Customer Trust in the Age of AI",
+    "desc": "A candid conversation on data ethics, transparency in automated decisions, and how brands can maintain emotional loyalty when technology drives every interaction.",
+    "speaker": "TBA",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "8",
+    "time": "12:30",
+    "endTime": "13:45",
+    "type": "break",
+    "title": "Networking Lunch",
+    "desc": "Curated roundtable lunches — join a topic table that matches your biggest CX challenge.",
+    "speaker": "",
+    "company": "",
+    "location": "Dining Hall"
+  },
+  {
+    "id": "9",
+    "time": "13:45",
+    "endTime": "14:30",
+    "type": "panel",
+    "title": "Omnichannel in Mobile-First India — WhatsApp, App, Web & Beyond",
+    "desc": "How India's leading consumer brands are stitching together WhatsApp, app, web and in-store journeys into a seamless experience for a mobile-native audience.",
+    "speaker": "Panel of 4 Industry Leaders",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "10",
+    "time": "14:30",
+    "endTime": "15:15",
+    "type": "keynote",
+    "title": "Proactive & Predictive Service — Solving Problems Before They Happen",
+    "desc": "Using data signals, ML models and behavioural analytics to anticipate customer needs and deliver resolutions before the customer even reaches out.",
+    "speaker": "TBA",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "11",
+    "time": "15:15",
+    "endTime": "15:45",
+    "type": "break",
+    "title": "Networking & Refreshment Break",
+    "desc": "Explore the exhibition floor and engage with technology partners.",
+    "speaker": "",
+    "company": "",
+    "location": "Exhibition Hall"
+  },
+  {
+    "id": "12",
+    "time": "15:45",
+    "endTime": "16:30",
+    "type": "panel",
+    "title": "Human + AI — Defining the Irreplaceable Role of Empathy in CX",
+    "desc": "Where does automation end and human connection begin? A thought-provoking panel on designing the right handoffs, preserving empathy at scale, and what customers really want.",
+    "speaker": "Panel of 4 Industry Leaders",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "13",
+    "time": "16:30",
+    "endTime": "17:00",
+    "type": "fireside",
+    "title": "Fireside Chat: Digital Workflows & the Customer-Centric Enterprise",
+    "desc": "How a leading enterprise rewired its internal operations — from back-office to frontline — to put the customer at the centre of every process decision.",
+    "speaker": "TBA",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "14",
+    "time": "17:00",
+    "endTime": "17:15",
+    "type": "keynote",
+    "title": "Closing Keynote: The CX Leader of Tomorrow",
+    "desc": "A rallying call on the mindset, skills and bold bets that will define the next generation of customer experience leadership.",
+    "speaker": "TBA",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "15",
+    "time": "17:15",
+    "endTime": "19:00",
+    "type": "awards",
+    "title": "World CX Awards Ceremony 2026",
+    "desc": "Celebrating excellence in customer experience across 20+ categories — recognising the brands, teams and individuals who set the benchmark in 2025–26.",
+    "speaker": "",
+    "company": "",
+    "location": "Main Stage"
+  },
+  {
+    "id": "16",
+    "time": "19:00",
+    "endTime": "21:00",
+    "type": "networking",
+    "title": "Networking Reception",
+    "desc": "An evening of celebration, connections and conversation — raise a toast to the day's insights and the award winners.",
+    "speaker": "",
+    "company": "",
+    "location": "Grand Ballroom"
+  }
+]

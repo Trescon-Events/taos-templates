@@ -1,0 +1,41 @@
+[
+  {
+    "id": "bl1",
+    "type": "PRESS RELEASE",
+    "date": "February 24, 2026",
+    "title": "Vault 2047 Announces India's First Sovereign Cyber Resilience Summit",
+    "excerpt": "Mumbai, India. Vault 2047 marks a watershed moment in India's cybersecurity journey, bringing together the nation's top defence, policy, and technology leaders...",
+    "image": "",
+    "link": "#",
+    "active": true,
+    "order": 1,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "bl2",
+    "type": "PRESS RELEASE",
+    "date": "February 24, 2026",
+    "title": "100+ Global Cyber Leaders Confirmed for Vault 2047 Mumbai",
+    "excerpt": "Mumbai, India. The roster of confirmed speakers for Vault 2047 reads like a who's who of the global cybersecurity establishment, with CISOs from Fortune 500...",
+    "image": "",
+    "link": "#",
+    "active": true,
+    "order": 2,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "bl3",
+    "type": "FEATURE",
+    "date": "February 24, 2026",
+    "title": "Why Vault 2047 Is Redefining India's Role in Global Cyber Governance",
+    "excerpt": "Mumbai, India. As cyberattacks grow in sophistication and scale, India is positioning itself as a global leader in cybersecurity policy through platforms like...",
+    "image": "",
+    "link": "#",
+    "active": true,
+    "order": 3,
+    "status": "approved",
+    "rejectionNote": ""
+  }
+]

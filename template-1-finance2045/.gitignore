@@ -1,0 +1,10 @@
+.next/
+.open-next/
+.wrangler/
+node_modules/
+.vercel
+*.env
+.env.local
+.env*.local
+tsconfig.tsbuildinfo
+*.bak

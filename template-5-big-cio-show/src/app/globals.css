@@ -1,0 +1,267 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-primary:   #0D0A1E;
+  --bg-surface:   #0A0818;
+  --bg-card:      #120E26;
+  --blue:         #7C3AED;
+  --blue-light:   #9461FA;
+  --cyan:         #C084FC;
+  --cyan-light:   #D8B4FE;
+  --gold:         #C9A84C;
+  --gold-light:   #DBC06A;
+  --border:       rgba(255,255,255,0.07);
+  --border-blue:  rgba(124,58,237,0.30);
+  --text-body:    #ffffff;
+  --text-muted:   rgba(255,255,255,0.90);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-primary);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+button { font-family: inherit; }
+img, video { display: block; max-width: 100%; }
+
+/* ── Shared buttons ── */
+.bcio-btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, #7C3AED 0%, #C084FC 100%);
+  color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.10em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: none; border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.bcio-btn-primary:hover {
+  opacity: 0.90;
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 1px rgba(124,58,237,0.40), 0 0 28px rgba(124,58,237,0.45), 0 0 56px rgba(124,58,237,0.18);
+}
+
+.bcio-btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent;
+  color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.10em;
+  text-transform: uppercase;
+  padding: 13px 32px;
+  border: 1.5px solid rgba(255,255,255,0.28);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.bcio-btn-outline:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(192,132,252,0.20);
+}
+
+.bcio-btn-gold {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--gold);
+  color: #0D0A1E;
+  font-size: 13px; font-weight: 800; letter-spacing: 0.10em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: none; border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.bcio-btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(201,168,76,0.40);
+}
+
+/* ── Eyebrow ── */
+.bcio-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.22em;
+  text-transform: uppercase; margin-bottom: 16px;
+  background: linear-gradient(90deg, #7C3AED, #C084FC, #D8B4FE);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.bcio-eyebrow::before {
+  content: ''; width: 20px; height: 1.5px; flex-shrink: 0;
+  background: linear-gradient(90deg, #7C3AED, #C084FC);
+  -webkit-text-fill-color: unset;
+}
+.bcio-eyebrow::after {
+  content: ''; width: 20px; height: 1.5px; flex-shrink: 0;
+  background: linear-gradient(90deg, #C084FC, #7C3AED);
+  -webkit-text-fill-color: unset;
+}
+
+/* ── Global card glow on hover ── */
+.bcio-theme-card,
+.bcio-spk-card,
+.bcio-stat-box,
+.bcio-why-card,
+.bcio-benefit-card,
+.bcio-partner-tile,
+.bcio-media-tile,
+.bcio-award-card,
+.bcio-step-card,
+.bcio-session-card,
+/* attend page */
+.bat-pass-card,
+.bat-card,
+.bat-hl-card,
+.bat-matter-card,
+.bat-spk-card,
+.bat-audience-card,
+/* agenda page */
+.bag-session,
+.bag-ov-stat,
+.bag-format-card,
+.bag-past-card,
+.bag-mapping-card,
+/* enquire page */
+.beq-form-card,
+.beq-type-btn,
+/* partners page */
+.bpt-title-tile,
+.bpt-benefit-card,
+.bpt-cat-card,
+.bpt-logo-tile,
+.bpt-media-logo-card,
+.bpt-title-card,
+/* speakers page */
+.bsp-card,
+/* awards page */
+.baw-process .bcio-step-card,
+.bab-stat-box,
+/* startups page */
+.bst-card,
+.bst-pitch-card,
+/* knowledge hub */
+.bkh-session-card,
+.bkh-report-card,
+/* networking page */
+.bnt-card,
+.bnt-philosophy-card,
+/* home page */
+.bh-spk-card,
+.bh-sponsor-logo-card,
+/* exhibitor portal */
+.bep-card,
+.bep-check-box {
+  border-radius: 16px !important;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s, background 0.25s !important;
+}
+.bcio-partner-tile,
+.bcio-media-tile,
+.bpt-title-tile,
+.bpt-logo-tile,
+.bpt-media-logo-card,
+.bnt-gallery-tile,
+.bh-sponsor-logo-card { border-radius: 12px !important; }
+
+/* Teal glow — standard interactive cards */
+.bcio-theme-card:hover,
+.bcio-spk-card:hover,
+.bcio-why-card:hover,
+.bcio-benefit-card:hover,
+.bcio-step-card:hover,
+.bcio-session-card:hover,
+.bat-pass-card:hover,
+.bat-card:hover,
+.bat-hl-card:hover,
+.bat-matter-card:hover,
+.bat-spk-card:hover,
+.bat-audience-card:hover,
+.bag-session:hover,
+.bag-format-card:hover,
+.bag-past-card:hover,
+.bag-mapping-card:hover,
+.beq-form-card:hover,
+.beq-type-btn:hover,
+.beq-type-btn.active,
+.bpt-benefit-card:hover,
+.bpt-cat-card:hover,
+.bpt-title-card:hover,
+.bsp-card:hover,
+.bst-card:hover,
+.bst-pitch-card:hover,
+.bkh-session-card:hover,
+.bkh-report-card:hover,
+.bnt-card:hover,
+.bnt-philosophy-card:hover,
+.bh-spk-card:hover,
+.bep-card:hover,
+.bep-check-box:hover {
+  border-color: rgba(124,58,237,0.70) !important;
+  box-shadow:
+    0 0 0 1px rgba(124,58,237,0.35),
+    0 0 28px rgba(124,58,237,0.38),
+    0 0 56px rgba(124,58,237,0.15),
+    inset 0 0 32px rgba(124,58,237,0.05) !important;
+  transform: translateY(-3px);
+}
+/* Light purple glow — stat boxes */
+.bcio-stat-box:hover,
+.bag-ov-stat:hover,
+.bab-stat-box:hover {
+  border-color: rgba(192,132,252,0.60) !important;
+  box-shadow:
+    0 0 0 1px rgba(192,132,252,0.28),
+    0 0 24px rgba(192,132,252,0.30),
+    0 0 48px rgba(192,132,252,0.12) !important;
+  transform: translateY(-2px);
+}
+/* Gold glow — award cards */
+.bcio-award-card:hover {
+  border-color: rgba(201,168,76,0.70) !important;
+  box-shadow:
+    0 0 0 1px rgba(201,168,76,0.35),
+    0 0 28px rgba(201,168,76,0.38),
+    0 0 56px rgba(201,168,76,0.15),
+    inset 0 0 32px rgba(201,168,76,0.05) !important;
+  transform: translateY(-3px);
+}
+/* Tile glow — logo tiles (no lift) */
+.bcio-partner-tile:hover,
+.bcio-media-tile:hover,
+.bpt-title-tile:hover,
+.bpt-logo-tile:hover,
+.bpt-media-logo-card:hover,
+.bnt-gallery-tile:hover,
+.bh-sponsor-logo-card:hover {
+  border-color: rgba(124,58,237,0.50) !important;
+  box-shadow:
+    0 0 0 1px rgba(124,58,237,0.25),
+    0 0 20px rgba(124,58,237,0.28),
+    0 0 40px rgba(124,58,237,0.10) !important;
+}
+
+/* ── Pulse dot ── */
+@keyframes bcio-pulse {
+  0%,100% { opacity:1; transform:scale(1); }
+  50%      { opacity:0.4; transform:scale(0.65); }
+}
+
+/* ── Section heading em gradient (global) ── */
+.bh-section-h2 em,
+.bag-h2 em, .bat-h2 em, .bsp-h2 em, .bpt-h2 em, .beq-h2 em {
+  font-style: normal;
+  background: linear-gradient(100deg, #9461FA 0%, #C084FC 55%, #D8B4FE 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

@@ -1,0 +1,357 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-primary:   #0A1628;
+  --bg-surface:   #0F1E38;
+  --bg-card:      #152233;
+  --coral:        #36BCB0;
+  --coral-light:  #4ECFC4;
+  --gold:         #C9A84C;
+  --gold-light:   #DBC06A;
+  --indigo:       #2BA89D;
+  --border:       rgba(255,255,255,0.10);
+  --border-coral: rgba(54,188,176,0.30);
+  --text-body:    rgba(255,255,255,0.88);
+  --text-muted:   rgba(255,255,255,0.58);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-primary);
+  color: #fff;
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+button { font-family: inherit; }
+img, video { display: block; max-width: 100%; }
+
+/* ── Shared button styles ── */
+.wcx-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--coral);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.wcx-btn-primary:hover {
+  background: var(--coral-light);
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 0 1px rgba(54,188,176,0.40),
+    0 0 24px rgba(54,188,176,0.45),
+    0 0 56px rgba(54,188,176,0.20);
+}
+
+.wcx-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 32px;
+  border: 1.5px solid rgba(255,255,255,0.30);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+.wcx-btn-outline:hover {
+  border-color: var(--coral);
+  color: var(--coral);
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 0 1px rgba(54,188,176,0.30),
+    0 0 24px rgba(54,188,176,0.30),
+    0 0 52px rgba(54,188,176,0.12);
+}
+
+
+.wcx-btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold);
+  color: #0A1628;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.wcx-btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 0 1px rgba(201,168,76,0.40),
+    0 0 24px rgba(201,168,76,0.45),
+    0 0 56px rgba(201,168,76,0.20);
+}
+
+/* ── Global card / box rounded corners ── */
+
+/* Large cards → 20px radius */
+.wcx-about-card, .wcx-spk-card, .tst-card, .bl-card,
+.wcx-topic-card,
+.ag-ov-card, .ag-session-card, .ag-cfs-card, .ag-pillar,
+.spk-card, .spk-cta-box,
+.att-stat, .att-expect-card, .att-pass-card, .att-benefit-card, .att-pass-enquire,
+.aw-award-card, .aw-crit-card, .aw-jury-card, .aw-why-card, .aw-step,
+.rg-spons-card, .rg-delegate-wrap, .rg-why-item,
+.bl-featured, .eq-wrap,
+.hap-card,
+.net-split-panel, .net-pre-event-box, .net-app-band,
+.net-phone-session-card { border-radius: 20px !important; }
+
+/* Smaller tiles → 14px radius */
+.mp-tile, .mp-spons-tile,
+.pt-tile, .pt-associate-tile, .pt-strategic-tile, .pt-media-tile,
+.net-ind-tag, .net-role-row { border-radius: 14px !important; }
+
+/* ── Ensure cards without a border get one (glow needs a border to show) ── */
+.bl-card, .hap-card, .wcx-topic-card,
+.att-benefit-card, .aw-step, .rg-why-item,
+.net-split-panel, .net-pre-event-box,
+.bl-featured { border: 1px solid rgba(255,255,255,0.09); }
+
+/* ── Smooth transitions on all cards ── */
+.wcx-about-card, .wcx-spk-card, .tst-card, .bl-card,
+.mp-tile, .mp-spons-tile,
+.wcx-topic-card,
+.ag-ov-card, .ag-session-card, .ag-cfs-card, .ag-pillar,
+.spk-card, .spk-cta-box,
+.pt-tile, .pt-associate-tile, .pt-strategic-tile, .pt-media-tile,
+.att-stat, .att-expect-card, .att-pass-card, .att-benefit-card, .att-pass-enquire,
+.aw-award-card, .aw-crit-card, .aw-jury-card, .aw-why-card, .aw-step,
+.rg-spons-card, .rg-delegate-wrap, .rg-why-item,
+.bl-featured, .eq-wrap,
+.hap-card,
+.net-split-panel, .net-pre-event-box {
+  transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease, background 0.25s ease !important;
+}
+
+/* ── Teal glow on hover — primary cards ── */
+.wcx-about-card:hover, .wcx-spk-card:hover, .tst-card:hover, .bl-card:hover,
+.wcx-topic-card:hover,
+.ag-ov-card:hover, .ag-session-card:hover, .ag-cfs-card:hover, .ag-pillar:hover,
+.spk-card:hover, .spk-cta-box:hover,
+.att-stat:hover, .att-expect-card:hover, .att-benefit-card:hover, .att-pass-enquire:hover,
+.aw-crit-card:hover, .aw-why-card:hover, .aw-step:hover,
+.rg-delegate-wrap:hover, .rg-why-item:hover,
+.bl-featured:hover, .eq-wrap:hover,
+.hap-card:hover,
+.net-split-panel:hover, .net-pre-event-box:hover {
+  border-color: rgba(54,188,176,0.80) !important;
+  box-shadow:
+    0 0 0 1px rgba(54,188,176,0.45),
+    0 0 20px rgba(54,188,176,0.50),
+    0 0 48px rgba(54,188,176,0.25),
+    0 0 80px rgba(54,188,176,0.10),
+    inset 0 0 28px rgba(54,188,176,0.07) !important;
+  transform: translateY(-4px);
+}
+
+/* ── Gold glow on hover — award / pass / sponsor cards ── */
+.aw-award-card:hover, .aw-jury-card:hover,
+.att-pass-card:hover,
+.rg-spons-card:hover {
+  border-color: rgba(201,168,76,0.80) !important;
+  box-shadow:
+    0 0 0 1px rgba(201,168,76,0.45),
+    0 0 20px rgba(201,168,76,0.50),
+    0 0 48px rgba(201,168,76,0.25),
+    0 0 80px rgba(201,168,76,0.10),
+    inset 0 0 28px rgba(201,168,76,0.07) !important;
+  transform: translateY(-4px);
+}
+
+/* ── Tile glow — scrolling marquee / partner tiles (no lift) ── */
+.mp-tile:hover, .mp-spons-tile:hover,
+.pt-tile:hover, .pt-associate-tile:hover, .pt-strategic-tile:hover, .pt-media-tile:hover {
+  border-color: rgba(54,188,176,0.65) !important;
+  box-shadow:
+    0 0 0 1px rgba(54,188,176,0.35),
+    0 0 18px rgba(54,188,176,0.40),
+    0 0 40px rgba(54,188,176,0.18) !important;
+}
+
+/* ── Utility: apply teal glow to any element ── */
+.wcx-glow-hover {
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 20px;
+  transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
+}
+.wcx-glow-hover:hover {
+  border-color: rgba(54,188,176,0.80) !important;
+  box-shadow:
+    0 0 0 1px rgba(54,188,176,0.45),
+    0 0 20px rgba(54,188,176,0.50),
+    0 0 48px rgba(54,188,176,0.25),
+    inset 0 0 28px rgba(54,188,176,0.07);
+  transform: translateY(-4px);
+}
+
+/* ── Eyebrow label ── */
+.wcx-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 20px;
+}
+.wcx-eyebrow-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--coral);
+  box-shadow: 0 0 8px var(--coral);
+  animation: wcx-pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes wcx-pulse {
+  0%,100% { opacity:1; transform:scale(1); }
+  50%      { opacity:0.4; transform:scale(0.65); }
+}
+
+/* ── HubSpot Form Dark Theme ── */
+.hs-form fieldset {
+  max-width: 100% !important;
+  border: none !important;
+}
+.hs-form .hs-form-field {
+  margin-bottom: 20px !important;
+}
+.hs-form label {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,0.55) !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+}
+.hs-form input[type="text"],
+.hs-form input[type="email"],
+.hs-form input[type="tel"],
+.hs-form input[type="number"],
+.hs-form select,
+.hs-form textarea {
+  width: 100% !important;
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-family: inherit !important;
+  padding: 13px 16px !important;
+  outline: none !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+.hs-form input:focus,
+.hs-form select:focus,
+.hs-form textarea:focus {
+  border-color: rgba(54,188,176,0.55) !important;
+  box-shadow: 0 0 0 3px rgba(54,188,176,0.12) !important;
+}
+.hs-form input::placeholder,
+.hs-form textarea::placeholder {
+  color: rgba(255,255,255,0.25) !important;
+}
+.hs-form select option {
+  background: #0F1E38 !important;
+  color: #fff !important;
+}
+.hs-form textarea {
+  resize: vertical !important;
+  min-height: 100px !important;
+}
+.hs-form .hs-error-msgs {
+  list-style: none !important;
+  margin-top: 6px !important;
+}
+.hs-form .hs-error-msgs li label {
+  font-size: 11px !important;
+  color: #ff6b6b !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-weight: 500 !important;
+}
+.hs-form .hs-button {
+  background: var(--coral) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  padding: 15px 40px !important;
+  cursor: pointer !important;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s !important;
+  font-family: inherit !important;
+  margin-top: 8px !important;
+  width: 100% !important;
+}
+.hs-form .hs-button:hover {
+  background: var(--coral-light) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 0 24px rgba(54,188,176,0.45) !important;
+}
+.hs-form .hs-richtext {
+  font-size: 12px !important;
+  color: rgba(255,255,255,0.40) !important;
+  line-height: 1.6 !important;
+  margin-bottom: 12px !important;
+}
+.hs-form .legal-consent-container {
+  font-size: 11px !important;
+  color: rgba(255,255,255,0.38) !important;
+  line-height: 1.6 !important;
+  margin-top: 16px !important;
+}
+.hs-form .legal-consent-container input[type="checkbox"] {
+  width: auto !important;
+  margin-right: 8px !important;
+  accent-color: var(--coral) !important;
+}
+.hs-form .inputs-list {
+  list-style: none !important;
+}
+.submitted-message {
+  text-align: center !important;
+  padding: 40px 20px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: var(--coral) !important;
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pt1",
+    "name": "Palo Alto Networks",
+    "tier": "platinum",
+    "logo": "",
+    "website": "https://paloaltonetworks.com",
+    "active": true,
+    "order": 1,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt2",
+    "name": "Microsoft Security",
+    "tier": "platinum",
+    "logo": "",
+    "website": "https://microsoft.com",
+    "active": true,
+    "order": 2,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt3",
+    "name": "CrowdStrike",
+    "tier": "gold",
+    "logo": "",
+    "website": "https://crowdstrike.com",
+    "active": true,
+    "order": 3,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt4",
+    "name": "Fortinet",
+    "tier": "gold",
+    "logo": "",
+    "website": "https://fortinet.com",
+    "active": true,
+    "order": 4,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt5",
+    "name": "IBM Security",
+    "tier": "gold",
+    "logo": "",
+    "website": "https://ibm.com/security",
+    "active": true,
+    "order": 5,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt6",
+    "name": "Cisco Security",
+    "tier": "gold",
+    "logo": "",
+    "website": "https://cisco.com",
+    "active": true,
+    "order": 6,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt7",
+    "name": "PwC",
+    "tier": "silver",
+    "logo": "",
+    "website": "https://pwc.com",
+    "active": true,
+    "order": 7,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt8",
+    "name": "Deloitte",
+    "tier": "silver",
+    "logo": "",
+    "website": "https://deloitte.com",
+    "active": true,
+    "order": 8,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt9",
+    "name": "EY",
+    "tier": "silver",
+    "logo": "",
+    "website": "https://ey.com",
+    "active": true,
+    "order": 9,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt10",
+    "name": "KPMG",
+    "tier": "silver",
+    "logo": "",
+    "website": "https://kpmg.com",
+    "active": true,
+    "order": 10,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt11",
+    "name": "Accenture",
+    "tier": "silver",
+    "logo": "",
+    "website": "https://accenture.com",
+    "active": true,
+    "order": 11,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt12",
+    "name": "Check Point",
+    "tier": "silver",
+    "logo": "",
+    "website": "https://checkpoint.com",
+    "active": true,
+    "order": 12,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt13",
+    "name": "Tenable",
+    "tier": "silver",
+    "logo": "",
+    "website": "https://tenable.com",
+    "active": true,
+    "order": 13,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt14",
+    "name": "Government of Maharashtra",
+    "tier": "government",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 14,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt15",
+    "name": "CERT-In",
+    "tier": "government",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 15,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt16",
+    "name": "MeitY",
+    "tier": "government",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 16,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt17",
+    "name": "Bloomberg",
+    "tier": "media",
+    "logo": "",
+    "website": "https://bloomberg.com",
+    "active": true,
+    "order": 17,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt18",
+    "name": "Economic Times",
+    "tier": "media",
+    "logo": "",
+    "website": "https://economictimes.com",
+    "active": true,
+    "order": 18,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt19",
+    "name": "NASSCOM",
+    "tier": "association",
+    "logo": "",
+    "website": "https://nasscom.in",
+    "active": true,
+    "order": 19,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "pt20",
+    "name": "DSCI",
+    "tier": "association",
+    "logo": "",
+    "website": "https://dsci.in",
+    "active": true,
+    "order": 20,
+    "status": "approved",
+    "rejectionNote": ""
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567801",
+    "label": "Banking & Financial Services",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567802",
+    "label": "Government & Public Sector",
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567803",
+    "label": "Defence & National Security",
+    "order": 3,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567804",
+    "label": "Cybersecurity & Information Security",
+    "order": 4,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567805",
+    "label": "Technology & Software",
+    "order": 5,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567806",
+    "label": "Telecommunications",
+    "order": 6,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567807",
+    "label": "Healthcare & Pharmaceuticals",
+    "order": 7,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567808",
+    "label": "Energy & Utilities",
+    "order": 8,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567809",
+    "label": "Retail & E-Commerce",
+    "order": 9,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567810",
+    "label": "Manufacturing & Industrial",
+    "order": 10,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567811",
+    "label": "Consulting & Advisory",
+    "order": 11,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567812",
+    "label": "Media & Entertainment",
+    "order": 12,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567813",
+    "label": "Education & Research",
+    "order": 13,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567814",
+    "label": "Insurance",
+    "order": 14,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567815",
+    "label": "Aerospace & Aviation",
+    "order": 15,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567816",
+    "label": "Legal & Compliance",
+    "order": 16,
+    "active": true
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567817",
+    "label": "Other",
+    "order": 17,
+    "active": true
+  }
+]

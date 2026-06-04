@@ -1,0 +1,32 @@
+[
+  {
+    "id": "tm1",
+    "quote": "The Big Cyber Security Show event provided updates on recent cyber risks, maturity within industry on cyber space and risk mitigations. The keynotes and panel discussion topics were well thought after and were very relevant to the current industry trends and challenges.",
+    "role": "CISO",
+    "org": "TATA AIA LIFE INSURANCE",
+    "active": true,
+    "order": 1,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "tm2",
+    "quote": "An exceptional platform bringing together the brightest minds in cybersecurity. The quality of speakers and the depth of discussions on critical infrastructure protection were unparalleled.",
+    "role": "Director of Information Security",
+    "org": "National Banking Group",
+    "active": true,
+    "order": 2,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "tm3",
+    "quote": "Vault 2047 represents the future of collaborative cyber defence. The roundtable sessions enabled policy-level conversations that simply don't happen elsewhere in the region.",
+    "role": "Deputy CISO",
+    "org": "Ministry of Electronics & IT",
+    "active": true,
+    "order": 3,
+    "status": "approved",
+    "rejectionNote": ""
+  }
+]

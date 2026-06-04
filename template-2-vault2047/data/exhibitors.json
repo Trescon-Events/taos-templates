@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ex1",
+    "name": "JISA",
+    "category": "Indian Cybersecurity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 1,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex2",
+    "name": "IDfy",
+    "category": "Indian Cybersecurity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 2,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex3",
+    "name": "CloudSEK",
+    "category": "Indian Cybersecurity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 3,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex4",
+    "name": "Cyber Chakra",
+    "category": "Indian Cybersecurity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 4,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex5",
+    "name": "Ram Antivirus",
+    "category": "Indian Cybersecurity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 5,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex6",
+    "name": "Quick Heal",
+    "category": "Indian Cybersecurity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 6,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex7",
+    "name": "Jio",
+    "category": "Infrastructure & Connectivity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 7,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex8",
+    "name": "Tata Communications",
+    "category": "Infrastructure & Connectivity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 8,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex9",
+    "name": "AdaniConneX",
+    "category": "Infrastructure & Connectivity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 9,
+    "status": "approved",
+    "rejectionNote": ""
+  },
+  {
+    "id": "ex10",
+    "name": "Yotta Infrastructure",
+    "category": "Infrastructure & Connectivity",
+    "logo": "",
+    "website": "",
+    "active": true,
+    "order": 10,
+    "status": "approved",
+    "rejectionNote": ""
+  }
+]

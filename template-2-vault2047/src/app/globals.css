@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Brand colors from Figma */
+  --orange:        #B86A2E;
+  --orange-light:  #C97A3A;
+  --teal:          #0D6665;
+  --teal-dim:      #0A4F4E;
+
+  /* Background layers */
+  --bg-nav:        #1E2323;
+  --bg-dark:       #020F0F;
+  --bg-mid:        #13130E;
+
+  /* Text */
+  --text-primary:  #F0EDE8;
+  --text-secondary:rgba(240,237,232,0.55);
+  --text-dim:      rgba(240,237,232,0.30);
+  --text-gray:     #9F9F9F;
+
+  /* Borders */
+  --border:        rgba(240,237,232,0.08);
+  --border-orange: rgba(184,106,46,0.30);
+
+  /* Legacy aliases used in existing components */
+  --bg-primary:        var(--bg-dark);
+  --bg-secondary:      var(--bg-mid);
+  --accent-orange:     var(--orange);
+  --accent-orange-bright: var(--orange-light);
+  --accent-teal:       var(--teal);
+  --accent-teal-dim:   var(--teal-dim);
+  --border-subtle:     var(--border);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Heading font */
+h1, h2, h3, .font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Section spacing */
+.section-pad {
+  padding: 100px 0;
+}
+
+/* Container */
+.container-vault {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .container-vault { padding: 0 20px; }
+  .section-pad { padding: 70px 0; }
+}
+
+/* Section label (e.g. "CORE THEMATIC AREAS") */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 16px;
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--teal);
+  flex-shrink: 0;
+}
+
+/* Section title (IBM Plex Sans, not Orbitron — matches Figma 32px w=600) */
+.section-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+/* Stat numbers (Orbitron, matches Figma 44px w=900) */
+.stat-number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 900;
+  color: var(--teal);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+/* Primary button (orange fill) */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--orange);
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 14px 32px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-primary:hover {
+  background: var(--orange-light);
+  transform: translateY(-1px);
+}
+
+/* Teal CTA */
+.btn-teal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--teal);
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 14px 32px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-teal:hover {
+  background: var(--teal-dim);
+}
+
+/* Outline button */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 13px 32px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-outline:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+/* Grid overlay */
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(184,106,46,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184,106,46,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  gap: 60px;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}

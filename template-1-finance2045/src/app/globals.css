@@ -1,0 +1,230 @@
+/* ==========================================
+   FINANCE 2045 — Global Styles
+   Brand Book v1.0 — Wormit Design
+   Capital Core #1F2733 | Capital Flow #00A5A3 | Reserve Gold #E9C268
+   Font: Sora (Google Fonts)
+   ========================================== */
+
+/* ── Lufga — self-hosted WOFF2 (70% smaller than TTF), non-blocking ── */
+@font-face { font-family:'Lufga'; src:url('/fonts/LufgaLight.woff2') format('woff2'),url('/fonts/LufgaLight.ttf') format('truetype'); font-weight:300; font-style:normal; font-display:swap; }
+@font-face { font-family:'Lufga'; src:url('/fonts/LufgaRegular.woff2') format('woff2'),url('/fonts/LufgaRegular.ttf') format('truetype'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Lufga'; src:url('/fonts/LufgaMedium.woff2') format('woff2'),url('/fonts/LufgaMedium.ttf') format('truetype'); font-weight:500; font-style:normal; font-display:swap; }
+@font-face { font-family:'Lufga'; src:url('/fonts/LufgaSemiBold.woff2') format('woff2'),url('/fonts/LufgaSemiBold.ttf') format('truetype'); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:'Lufga'; src:url('/fonts/LufgaBold.woff2') format('woff2'),url('/fonts/LufgaBold.ttf') format('truetype'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Lufga'; src:url('/fonts/LufgaExtraBold.woff2') format('woff2'),url('/fonts/LufgaExtraBold.ttf') format('truetype'); font-weight:800; font-style:normal; font-display:swap; }
+@font-face { font-family:'Lufga'; src:url('/fonts/LufgaBlack.woff2') format('woff2'),url('/fonts/LufgaBlack.ttf') format('truetype'); font-weight:900; font-style:normal; font-display:swap; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Brand colours — Finance 2045 Brand Book v1.0 */
+  --bg-primary:   #1F2733;   /* Neutral/Background/Dark — app bg */
+  --bg-surface:   #2C3644;   /* Capital Core — panels, sections */
+  --bg-card:      #243040;   /* Card backgrounds */
+  --bg-card-2:    #2f3d50;   /* Card hover state */
+  --teal:         #00A5A3;   /* Capital Flow — secondary, CTAs, links */
+  --teal-light:   #00bfbd;   /* Teal hover */
+  --teal-dim:     rgba(0,165,163,0.14);
+  --gold:         #E9C268;   /* Reserve Gold — stats, highlights, premium */
+  --gold-dim:     rgba(233,194,104,0.14);
+  --white:        #ffffff;
+  --text-body:    rgba(255,255,255,0.82);
+  --text-muted:   rgba(255,255,255,0.50);
+  --border:       rgba(0,165,163,0.20);
+  --border-dark:  rgba(255,255,255,0.07);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--white);
+  font-family: 'Lufga', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: max(15px, 1em);
+}
+
+li {
+  font-size: max(14px, 1em);
+}
+
+/* Shared utility classes */
+.f45-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .f45-container {
+    padding: 0 20px;
+  }
+}
+
+/* ── Shared CTA buttons ── */
+.f45-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--teal);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  font-family: inherit;
+}
+.f45-btn-primary:hover {
+  background: var(--teal-light);
+  transform: translateY(-1px);
+}
+
+.f45-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, transform 0.15s;
+  font-family: inherit;
+}
+.f45-btn-outline:hover {
+  border-color: var(--teal);
+  background: linear-gradient(135deg, #ffffff 0%, #00a5a3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateY(-1px);
+}
+
+/* ── Section eyebrow ── */
+.f45-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 16px;
+}
+.f45-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+/* ── Shared section header ── */
+.f45-section-head {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.f45-section-head h2 {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--white);
+}
+.f45-section-head h2 span {
+  color: var(--teal);
+}
+.f45-section-head p {
+  margin-top: 16px;
+  font-size: 16px;
+  color: var(--text-body);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Brand radius — matches teal 2045 box in logo ── */
+:root { --radius: 8px; }
+
+/* ── Cursor-glow card effect ── */
+.gc {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+/* tap-flash ring — opacity-only so it's GPU composited */
+.gc::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 1px rgba(0,165,163,0.7), inset 0 0 40px rgba(0,165,163,0.15);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+}
+@keyframes gc-tap-flash {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+.gc.gc-tap::before { animation: gc-tap-flash 0.55s ease-out forwards; }
+.gc::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle 300px at var(--gx, -999px) var(--gy, -999px),
+    rgba(0,165,163,0.16) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.gc:hover::after { opacity: 1; }
+.gc-gold::after {
+  background: radial-gradient(
+    circle 300px at var(--gx, -999px) var(--gy, -999px),
+    rgba(233,194,104,0.16) 0%,
+    transparent 70%
+  );
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 3px; }
